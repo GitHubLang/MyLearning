@@ -2,11 +2,14 @@ package 设计模式.状态模式.Proj项目;
 
 import 设计模式.状态模式.Context;
 import 设计模式.状态模式.State;
+import 设计模式.状态模式.mapper.ProjMapper;
 import 设计模式.状态模式.param.ProjParam;
 
 public class ProjContext extends Context<ProjParam> {
 
     private ProjParam projParam;
+
+    protected ProjMapper projMapper = new ProjMapper();
 
     public ProjContext(ProjParam projParam) {
         super(new ProjState_100());

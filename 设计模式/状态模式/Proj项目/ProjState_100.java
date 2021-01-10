@@ -6,8 +6,10 @@ public class ProjState_100 extends ProjState {
     @Override
     public void process() {
 
-       if("100".equals(this.projParam.getCurrState())){
+       if("100".equals(projParam.getCurrState())){
            System.out.println("100处理！");
+           String mapper = projContext.projMapper.getMapper();
+           System.out.println(mapper);
            projParam.setNextState("400");
            projParam.setCurrState("300");
        }else {

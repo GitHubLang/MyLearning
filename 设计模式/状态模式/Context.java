@@ -1,7 +1,7 @@
 package 设计模式.状态模式;
 
 public abstract class Context<T> {
-    private State state;
+    protected State state;
     public Context(State state){
         this.state = state;
     }

@@ -17,7 +17,7 @@ public class main {
         System.out.println(resultParam);
 
         CompParam compParam = new CompParam();
-        compParam.setCurrState("100");
+        compParam.setCurrState("400");
 
         Context<CompParam> context1 = new CompContext(compParam);
         CompParam resultParam1 = context1.getResultParam();
