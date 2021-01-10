@@ -4,7 +4,7 @@ import 设计模式.状态模式.Context;
 import 设计模式.状态模式.State;
 import 设计模式.状态模式.param.ProjParam;
 
-public class ProjContext extends Context {
+public class ProjContext extends Context<ProjParam> {
 
     private ProjParam projParam;
 

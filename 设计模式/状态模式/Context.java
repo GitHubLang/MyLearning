@@ -1,12 +1,12 @@
 package 设计模式.状态模式;
 
-public abstract class Context {
+public abstract class Context<T> {
     private State state;
     public Context(State state){
         this.state = state;
     }
 
-    protected abstract <T>T getResultParam();
+    protected abstract T getResultParam();
 
     public State getState() {
         return state;
